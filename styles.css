@@ -1,4 +1,11 @@
 /* Reset some default browser styles */
+:root {
+--bgColor: #333;
+--fgColor: #f0f0f0;
+
+}
+
+
 body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
@@ -10,20 +17,20 @@ body, h1, h2, p, ul {
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    color: #333;
-    background-color: #f0f0f0;
+    color: var(--bgColor)
+    background-color: var(--fgColor)
 }
 
 header {
-    background-color: #333;
-    color: #f0f0f0;
+    background-color: var(--bgColor);
+    color: var(--fgColor);
     text-align: center;
     padding: 20px;
 }
 
 nav {
-    background-color: #333;
-    color: #f0f0f0;
+    background-color: var(--bgColor);
+    color: var(--fgColor);
     text-align: center;
     padding: 10px;
 }
@@ -39,7 +46,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #f0f0f0;
+    color: var(--fgColor);
 }
 
 main {
@@ -50,15 +57,15 @@ main {
 
 section {
     margin-bottom: 20px;
-    color: #333;
-    background-color: #f0f0f0;
+    color: var(--bgColor);
+    background-color: var(--fgColor);
     padding: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Style for the service boxes */
 .service {
-    background-color: #f0f0f0;
+    background-color: var(--fgColor);
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -79,8 +86,8 @@ section {
 
 /* Style for the footer */
 footer {
-    background-color: #333;
-    color: #f0f0f0;
+    background-color: var(--bgColor);
+    color: var(--fgColor);
     padding: 20px 0;
     text-align: center;
 }
@@ -93,8 +100,8 @@ footer {
 
 /* Style for the contact form container */
 .contact-form form {
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: var(--fgColor);
+    color: var(--bgColor);
     padding: 20px;
     margin: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
